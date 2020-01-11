@@ -4,7 +4,7 @@ Wiki is project which provides a user interface to download the Wikipedia pages.
 * python3.6
 
 Clone the repository \
-`https://github.com/harshabaddam/wiki.git`
+`https://github.com/harshabaddam/wiki.git` \
 Create virtual environment \
 `virtualenv venv -p pyton3.6` \
 activate the virtual environment \
