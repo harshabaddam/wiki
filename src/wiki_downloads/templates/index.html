@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Wiki</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Wikipedia API</h1>
+    <h1><input type="search" id="search_id"> <input type="button" value="Search" id="search_button"></h1>
+    <p id="no_result"></p>
+    <ul id="list_id"></ul>
+{% endblock %}
+
+{% block js %}
+{% load static %}
+<script src="{% static 'index.js' %}"></script>
+{% endblock %}

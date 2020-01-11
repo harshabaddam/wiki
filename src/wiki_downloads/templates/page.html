@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load static %}
+    <div>
+        <div style="float:left"><a href="{{request.META.HTTP_REFERER}}"><button>back</button></a></div>
+        <div style="float:right"><a href="/download/?title={{title}}" download><button>Download</button></a></div>
+    </div>
+    <iframe src="{% static 'page_content.html' %}" width="100%" height="500px"></iframe>
+{% endblock %}
