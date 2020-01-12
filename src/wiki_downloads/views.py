@@ -47,7 +47,7 @@ def page_download_view(request):
     """
     if request.method == 'GET':
         title = request.GET.get('title')
-        response = HttpResponse(wiki_api.page_api(title=title, output_format='pdf'), content_type="text")
+        response = HttpResponse(wiki_api.page_api(title=title, output_format='pdf'))
         response['Content-Disposition'] = 'attachment; filename= %s.pdf' % title.replace(' ', '_')
         return response
 
